@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Minhas Novelas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="carregarNovelas()">
+  <div class="container">
+    <header>
+      <h1>Minhas Novelas</h1>
+      <button onclick="logout()">Sair</button>
+    </header>
+
+    <div class="card">
+      <h2>Criar nova novela</h2>
+      <input type="text" id="titulo" placeholder="Título da novela" />
+      <textarea id="descricao" placeholder="Descrição (opcional)"></textarea>
+      <button onclick="criarNovela()">Criar</button>
+    </div>
+
+    <div class="card">
+      <h2>Suas novelas</h2>
+      <ul id="lista-novelas"></ul>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

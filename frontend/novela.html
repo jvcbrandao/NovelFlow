@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Capítulos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="carregarCapitulos()">
+  <div class="container">
+    <header>
+      <h1 id="titulo-novela">Título</h1>
+      <button onclick="voltar()">Voltar</button>
+    </header>
+
+    <div class="card">
+      <h2 id="titulo-form-capitulo">Novo Capítulo</h2>
+      <input type="text" id="titulo-cap" placeholder="Título do capítulo" />
+      <textarea id="conteudo-cap" placeholder="Texto do capítulo" rows="6"></textarea>
+      <div>
+        <button onclick="criarCapitulo()">Salvar Capítulo</button>
+        <button class="btn-cancel" onclick="cancelarEdicao()" style="display: none;">Cancelar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>Capítulos</h2>
+      <div id="lista-capitulos"></div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
